@@ -22,7 +22,7 @@ const Login = () => {
   };
   const sendRequest = async (type = "login") => {
     const res = await axios
-      .post(`http://localhost:5000/api/users/${type}`, {
+      .post(`http://54.213.113.42:5000/api/users/${type}`, {
         name: inputs.name,
         email: inputs.email,
         password: inputs.password,
